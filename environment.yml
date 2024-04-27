@@ -1,0 +1,14 @@
+name: okeoke
+channels:
+- anaconda
+- conda-forge
+dependencies:
+- python=3.10
+- nb_conda_kernels
+- pytorch
+- torchvision
+- matplotlib
+- numpy
+- pandas
+- scikit-learn
+- dvc
