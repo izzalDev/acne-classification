@@ -1,0 +1,21 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python src/prepare.py
+    deps:
+    - path: src/prepare.py
+      hash: md5
+      md5: 0fd7640159e75063162d171cda5426ff
+      size: 1510
+    params:
+      params.yaml:
+        prepare.seed: 42
+        prepare.shuffle: true
+        prepare.split: 0.2
+        prepare.stratify: true
+    outs:
+    - path: data/processed
+      hash: md5
+      md5: d3611453c223e743b8e58ff76f6a0e08.dir
+      size: 2911153
+      nfiles: 4331
