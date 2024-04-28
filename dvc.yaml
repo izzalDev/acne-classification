@@ -2,7 +2,7 @@ stages:
   prepare:
     cmd: python src/prepare.py data/data.xml
     deps:
-    - data/data.xml
+    - data/raw
     - src/prepare.py
     params:
     - prepare.seed
